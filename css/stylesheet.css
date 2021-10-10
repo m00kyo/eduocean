@@ -17,6 +17,7 @@ a:link,
 a:active {
   text-decoration: initial;
   color: initial;
+  margin: 0px;
 }
 
 body {
@@ -103,6 +104,7 @@ html {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -134,19 +136,6 @@ html {
 
 .card-body {
   background-color: whitesmoke;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   padding: 10px;
   min-height: 200px;
 }
@@ -215,6 +204,26 @@ input[type="search"] {
   position: relative;
 }
 
+input[type="search"]::-webkit-input-placeholder {
+  color: var(--color-brand);
+  opacity: 1;
+}
+
+input[type="search"]:-ms-input-placeholder {
+  color: var(--color-brand);
+  opacity: 1;
+}
+
+input[type="search"]::-ms-input-placeholder {
+  color: var(--color-brand);
+  opacity: 1;
+}
+
+input[type="search"]::placeholder {
+  color: var(--color-brand);
+  opacity: 1;
+}
+
 button {
   display: none;
   position: absolute;
@@ -243,5 +252,18 @@ label {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+#seclogo {
+  font-family: var(--font-fam);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
+  margin: 4vh;
+  margin-top: -8px;
 }
 /*# sourceMappingURL=stylesheet.css.map */

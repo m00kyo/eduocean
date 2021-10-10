@@ -18,6 +18,7 @@ a:link,
 a:active {
     text-decoration: initial;
     color: initial;
+    margin: 0px;
 }
 
 // Setup
@@ -78,6 +79,7 @@ html {
     width: 1040px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -98,16 +100,13 @@ html {
     height: 135px;
     object-fit: cover;
 }
-.card-header{
+
+.card-header {
     height: 135px;
 }
 
 .card-body {
     background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     padding: 10px;
     min-height: 200px;
 }
@@ -172,6 +171,11 @@ input[type="search"] {
     position: relative;
 }
 
+input[type="search"]::placeholder {
+    color: var(--color-brand);
+    opacity: 1;
+}
+
 button {
     display: none;
     position: absolute;
@@ -200,4 +204,17 @@ label {
     height: 1px;
     width: 1px;
     overflow: hidden;
+}
+
+
+//------------------
+
+#seclogo
+{
+    font-family: var(--font-fam);
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    margin: 4vh;
+    margin-top: -8px;
 }

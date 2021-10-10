@@ -11,6 +11,14 @@
   --bez: cubic-bezier(0, 0, 0.43, 1.49);
 }
 
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: initial;
+  color: initial;
+}
+
 body {
   background: #ccddff;
   background: -webkit-gradient(linear, left top, right top, color-stop(40%, #ccddff), to(#e5ccff));
@@ -19,10 +27,11 @@ body {
 }
 
 html {
+  color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 *,
@@ -30,6 +39,29 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+#logo {
+  font-family: var(--font-fam);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20vh;
+  font-size: 1.5em;
+}
+
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .searchbar {
@@ -42,7 +74,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 50vh;
+  margin-top: 20px;
+  margin-bottom: 20vh;
 }
 
 .cards {
@@ -84,15 +117,19 @@ html {
 }
 
 .card:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .card-header img {
   width: 100%;
-  height: 130px;
+  height: 135px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.card-header {
+  height: 135px;
 }
 
 .card-body {
@@ -111,7 +148,7 @@ html {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 10px;
-  min-height: 175px;
+  min-height: 200px;
 }
 
 .tag {
@@ -126,6 +163,10 @@ html {
 
 .tag-teal {
   background-color: #47bcd4;
+}
+
+.tag-eng {
+  background-color: #012169;
 }
 
 .tag-purple {
@@ -143,7 +184,7 @@ html {
 
 form {
   position: relative;
-  width: 50rem;
+  width: 50em;
   background: var(--color-brand);
   border-radius: var(--rad);
 }

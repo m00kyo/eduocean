@@ -1,0 +1,75 @@
+extends layout
+
+block content
+  #logo
+    h2
+      | EDU
+      span(style='color: #4B597A') OCEAN
+  .searchbar
+    form(onsubmit='event.preventDefault();' role='search')
+      label(for='search') Search for stuff
+      input#search(type='search' placeholder='Search...' autofocus='' required='')
+      button(type='submit') Go
+  .cards
+    .container
+      a(href='https://www.theodinproject.com/' target='_blank')
+        .card
+          .card-header
+            img(src='/images/informatyka.jpg' alt='Informatyka')
+          .card-body
+            //
+              <div class="tags">
+              <span class="tag tag-teal">Technologia</span>
+              <span class="tag tag-eng">Angielski</span>
+              <span class="tag tag-purple">Popular</span>
+              </div>
+            h4
+              | Informatyka
+            p
+              | Opis
+      a(href='https://www.theodinproject.com/' target='_blank')
+        .card
+          .card-header
+            img(src='/images/abc-6305104_1280.jpg' alt='Matematyka')
+          .card-body
+            h4
+              | Matematyka
+            p
+              | Opis
+      a(href='https://www.theodinproject.com/' target='_blank')
+        .card
+          .card-header
+            img(src='/images/biology.jpg' alt='Biologia')
+          .card-body
+            h4
+              | Biologia
+            p
+              | Opis
+      a(href='https://www.theodinproject.com/' target='_blank')
+        .card
+          .card-header
+            img(src='/images/chemistry.jpg' alt='Chemia')
+          .card-body
+            h4
+              | Chemia
+            p
+              | Opis
+      a(href='https://www.theodinproject.com/' target='_blank')
+        .card
+          .card-header
+            img(src='/images/hand-5786371_1280.jpg' alt='Rozwój Osobisty')
+          .card-body
+            h4
+              | Rozw&oacute;j osobisty
+            p
+              | Opis
+      a(href='https://www.theodinproject.com/' target='_blank')
+        .card
+          .card-header
+            img(src='/images/st-petersburg-4805301_1280.jpg' alt='rover')
+          .card-body
+            h4
+              | Historia
+            p
+              | Opis
+

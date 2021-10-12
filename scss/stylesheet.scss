@@ -56,7 +56,9 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
-
+.cards h4{
+  text-align: center;
+}
 .searchbar {
     display: flex;
     align-items: center;
@@ -72,6 +74,10 @@ html {
     margin: 0;
     font-family: "Roboto", sans-serif;
     color: #10182f;
+}
+
+.cards h4{
+    text-align: center;
 }
 
 .container {

@@ -7,11 +7,12 @@ var ArticleSchema = new Schema(
     title: {type: String, required: true},
     desc: {type: String, required: true},
     genre: [{type: Schema.Types.ObjectId, ref: 'Genre'}],
-    lang: {type: String, ref: 'Lang', required: true}
+    lang: {type: String, ref: 'Lang', required: true},
+    link: {type: String, required: true}
   }
 );
 
-// Virtual for book's URL
+// Virtual for article's URL
 ArticleSchema
 .virtual('url')
 .get(function () {
@@ -19,4 +20,4 @@ ArticleSchema
 });
 
 //Export model
-module.exports = mongoose.model('Book', ArticleSchema);
+module.exports = mongoose.model('Article', ArticleSchema);
